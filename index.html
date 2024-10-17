@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Будильник</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Будильник</h1>
+    
+    <!-- Вибір типу будильника -->
+    <div class="alarm-selector">
+      <label for="alarmType">Оберіть тип будильника:</label>
+      <select id="alarmType">
+        <option value="sound">Звуковий сигнал</option>
+        <option value="melody">Мелодія</option>
+      </select>
+    </div>
+
+    <!-- Кнопки керування будильником -->
+    <div class="controls">
+      <button id="startBtn" class="btn">Запустити будильник</button>
+      <button id="stopBtn" class="btn">Зупинити будильник</button>
+      <button id="wakeBtn" class="btn">Будити</button>
+    </div>
+
+    <!-- Виведення результатів -->
+    <div id="output" class="output"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
